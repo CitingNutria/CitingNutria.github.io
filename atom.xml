@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-19T22:30:31.085Z</updated>
+  <updated>2021-02-20T02:26:19.352Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2021/02/20/hello-world/"/>
-    <id>http://example.com/2021/02/20/hello-world/</id>
-    <published>2021-02-19T22:30:31.085Z</published>
-    <updated>2021-02-19T22:30:31.085Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hexo + Github page笔记</title>
@@ -54,6 +34,28 @@
       
     
     
+    
+    
+  </entry>
+  
+  <entry>
+    <title>光盘备份计划</title>
+    <link href="http://example.com/2020/08/25/2020-8-25-disc_plan/"/>
+    <id>http://example.com/2020/08/25/2020-8-25-disc_plan/</id>
+    <published>2020-08-24T16:03:06.000Z</published>
+    <updated>2020-08-29T13:35:21.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在数月之前，SSD发生了一次毁灭性的故障，导致了许多曾在Minecraft服务器（毛线）里的截图丢失，这些截图的丢人令我感到非常难受，毕竟算是曾经几乎一整年的回忆（当时什么都没有干完全沉迷毛线）。仔细回想这也不是第一次因为电脑或者手机丢失/故障而失去一些重要数据了，于是打算折腾一个数据冷备份的计划。<br>Google了一下主流存储介质的寿命，看起来光盘的寿命似乎有10年左右，不过网上也很多人说自己在家用刻录机刻录的光盘的寿命要比批量压制的光盘短很多，不过个人当然不可能去压制光盘，当年父母结婚时候的刻录盘似乎现在也可以读取，感觉光盘的可靠性似乎不错。<br>如果打算光盘备份的话，预算充足蓝光盘无疑是最好的选择，每片25G的廉价蓝光盘大概2元左右，但是蓝光刻录机的价格成功阻止了我，几乎全都在500+。考虑到现在需要备份的资料不是特别多，准备用单盘4.7G的DVD盘备份，因为还在上学，对便携性有一点点要求，于是咸鱼收了一台苹果的SuperDrive，事实上如果不要求便携性，一台二手的DVD刻录光驱+SATA转USB线，大概只要40r不到就能拿下。</p><h2 id="WIP"><a href="#WIP" class="headerlink" title="WIP"></a>WIP</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在数月之前，SSD发生了一次毁灭性的故障，导致了许多曾在Minecraft服务器（毛线）里的截图丢失，这些截图的丢人令我感到非常难受，毕竟算</summary>
+      
+    
+    
+    
+    <category term="jekyll update" scheme="http://example.com/categories/jekyll-update/"/>
     
     
   </entry>
