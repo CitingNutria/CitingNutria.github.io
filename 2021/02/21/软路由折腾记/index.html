@@ -172,7 +172,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>253 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>395 字</span>
         </span>
     
     
@@ -190,8 +190,9 @@
 <ol>
 <li>有部分设备没发装翻墙客户端或者非常之麻烦，比如电视盒子。</li>
 <li>客户端的代理层级不够高，导致不支持sock5的应用没法利用梯子，比如npm安装包的时候，找国内的镜像源又是一件麻烦事，又或者大部分游戏，玩Minecraft连接不上Mojang的验证服务器也是常有的事。</li>
-<li>节约客户端用于解码加密数据的算力，虽然个人并没有明显的感受到这一点的影响。</li>
+<li>节约客户端用于解码加密数据的算力，虽然个人并没有明显的感受到这一点的影响，但是对于一些算力比较弱的设备可能比较重要。</li>
 </ol>
+<p>在学校里因为要对校园网进行桥接来让我所有的设备能够联网，而不是每个设备每次都要单独登录，更何况还有设备数量限制。一开始是闲鱼买的一台伊拉克成色的小米路由器mini，只要30块钱，让大佬同学帮我刷了老毛子固件，用了一阵子，至少在本职工作——桥接校园网这件事上做的还是不错的。</p>
 <h1 id="咕"><a href="#咕" class="headerlink" title="咕"></a>咕</h1>
         </div>
 
@@ -383,43 +384,9 @@
         </aside>
     
 
-    .image-viewer-container {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0);
-  visibility: hidden;
-  z-index: $z-index-8;
-  padding: 6%;
-  box-sizing: border-box;
-  transition-t("visibility, background", "0, 0", "0.3, 0.3", "ease, ease");
-
-  &.active {
-    background: rgba(0, 0, 0, 0.5);
-    visibility: visible;
-
-    img {
-      cursor: zoom-out;
-      transform: scale(1);
-      padding: 2px;
-      background: var(--background-color);
-    }
-  }
-
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    transform: scale(0);
-    transition-t("transform", "0", "0.3", "ease");
-  }
-}
-
-
+    <div class="image-viewer-container">
+    <img src="">
+</div>
 
 
     
