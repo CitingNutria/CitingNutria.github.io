@@ -35,48 +35,73 @@
 <main class="page-container">
 
     
-        <div class="first-screen-container flex-center fade-in-down-animation">
-    <div class="content flex-center">
-        <div class="description">
-            まだ夢がある
-        </div>
-        
-            <div class="s-icon-list">
-                
-                    
-                        
-                            <span class="s-icon-item github">
-                                <a target="_blank" href="https://github.com/CitingNutria">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-                    
-                        
-                            <span class="s-icon-item twitter">
-                                <a target="_blank" href="https://twitter.com/CitingNutria">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-                    
-                        
-                            <span class="s-icon-item email">
-                                <a href="mailto:citingnutria@gmail.com">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-            </div>
-        
-    </div>
-</div>
+        $first-screen-font-size = 2rem;
+$first-screen-icon-size = 1.6rem;
+
+$temp-img = hexo-config('style.first_screen.background_img');
+$first-screen-img = $temp-img ? $temp-img:'/images/bg.svg';
+
+.first-screen-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  background: url($first-screen-img) center center / cover no-repeat;
+  background-position-y: $header-height;
+
+
+  +keep-tablet() {
+    background-position-y: $header-height * 0.9;
+  }
+
+  +keep-mobile() {
+    background-position-y: $header-height * 0.8;
+  }
+
+  .content {
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+    height: 90%;
+
+    .description {
+      font-weight: bold;
+      font-size: $first-screen-font-size;
+      line-height: 1.8;
+      text-align: center;
+      color: var(--default-text-color);
+
+
+      +keep-tablet() {
+        font-size: $first-screen-font-size * 0.9;
+      }
+    }
+
+
+    .s-icon-list {
+      position: absolute;
+      bottom: 0;
+      font-size: $first-screen-icon-size;
+      text-align: center;
+
+      +keep-tablet() {
+        font-size: $first-screen-icon-size * 0.9;
+      }
+
+      .s-icon-item {
+        margin-right: 20px;
+        cursor: pointer;
+        line-height: 2;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+
+    }
+  }
+}
 
     
 
@@ -221,15 +246,15 @@
 
                 <h3 class="home-article-title">
                     <a href="/2021/02/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8A%98%E8%85%BEBlog/">
-                        第三次折腾Blog
+                        Hexo + Github page笔记
                     </a>
                 </h3>
 
                 <div class="home-article-content markdown-body">
                     
-                         这次使用的是Github page + Hexo的组合，只要求能跑起来就好(捂脸)。
+                         其实这是第三次折腾Blog了，这次使用的是Github page + Hexo的组合，只要求能跑起来就好(捂脸)。
 这里记录一下安装的步骤好了，主要目的是防止自己之后又忘记，环境是MacOS Catalina 10.15.7。
-环境检查首先检查一下需要的Node和Git,如果正...
+环境检查首先检查一下...
                     
                 </div>
 
