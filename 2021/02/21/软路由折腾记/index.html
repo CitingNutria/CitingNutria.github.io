@@ -9,7 +9,7 @@
     
     <title>
         
-            关于 |
+            软路由折腾记 |
         
         Citing&#39;s Blog
     </title>
@@ -79,7 +79,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/about"
                             >
                                 关于
@@ -123,7 +123,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/about">关于</a>
                 </li>
             
@@ -143,20 +143,140 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="page-template-container">
-        
-        
-        <div class="page-template-content markdown-body">
-            
-                <p>某不知名医学院计算机科学在读，病危拖延症患者。</p>
-<p>喜欢玩Minecraft和看动漫,曾经在<a class="link"   target="_blank" rel="noopener" href="https://www.craft.moe/" >毛线<i class="fas fa-external-link-alt"></i></a>服务器花费了一整年，也认识了很多有趣的新朋友，也或多或少改变了我对自己人生的一些看法。</p>
-<p>现在在学日本語，希望可以早日考N2。</p>
+    <div class="article-content-container">
 
-            
+        <div class="article-title">
+            <span class="title-hover-animation">软路由折腾记</span>
         </div>
-        <div class="page-template-comments">
-            
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.jpg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Citing</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2021-02-21 06:55:18
+    </span>
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>253 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <p>从前总是听说过软路由，但是也一直没有去详细了解这么个东西，去年秋季开学机缘巧合下通过一个新同学认识了软路由这么个东西。</p>
+<p>软路由的功能不少，但是对我来说最重要的莫过于全局魔法上网了，在此之前我所有的设备都是通过客户端上网的。客户端翻墙有这么几个弊端。</p>
+<ol>
+<li>有部分设备没发装翻墙客户端或者非常之麻烦，比如电视盒子。</li>
+<li>客户端的代理层级不够高，导致不支持sock5的应用没法利用梯子，比如npm安装包的时候，找国内的镜像源又是一件麻烦事，又或者大部分游戏，玩Minecraft连接不上Mojang的验证服务器也是常有的事。</li>
+<li>节约客户端用于解码加密数据的算力，虽然个人并没有明显的感受到这一点的影响。</li>
+</ol>
+<h1 id="咕"><a href="#咕" class="headerlink" title="咕"></a>咕</h1>
         </div>
+
+        
+
+        
+            <div class="article-nav">
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2021/02/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8A%98%E8%85%BEBlog/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Hexo + Github page笔记</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;评论</i>
+    </div>
+    
+
+        
+            
+    <div id="gitalk-container"></div>
+    <script 
+            src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script >
+
+        function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+                Gitalk && new Gitalk({
+                    clientID: 'eb532668584224258b71',
+                    clientSecret: '7617f1f3e68fe19244e20914db9d7b492929fb24',
+                    repo: 'Gitalk-repository',
+                    owner: 'citingnutria',
+                    admin: ['citingnutria'],
+                    id: __gitalk__pathname,
+                    language: 'zh'
+                }).render('gitalk-container');
+
+            } catch (e) {
+                window.Gitalk = null;
+            }
+        }
+
+        if ('false') {
+            const loadGitalkTimeout = setTimeout(() => {
+                loadGitalk();
+                clearTimeout(loadGitalkTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+        }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
     </div>
 </div>
 
@@ -187,6 +307,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -232,6 +373,14 @@
 
     </div>
 
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%92%95"><span class="nav-number">1.</span> <span class="nav-text">咕</span></a></li></ol>
+    </div>
+</div>
+        </aside>
     
 
     .image-viewer-container {
@@ -321,6 +470,8 @@
 
 
 <div class="post-scripts">
+    
+        <script src="/js/left-side-toggle.js"></script><script src="/js/libs/anime.min.js"></script><script src="/js/toc.js"></script>
     
 </div>
 

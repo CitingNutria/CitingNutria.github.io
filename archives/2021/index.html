@@ -9,7 +9,7 @@
     
     <title>
         
-            Archive: 2021 |
+            归档: 2021 |
         
         Citing&#39;s Blog
     </title>
@@ -58,7 +58,7 @@
                             <a class=""
                                href="/"
                             >
-                                HOME
+                                首页
                             </a>
                         </li>
                     
@@ -66,7 +66,7 @@
                             <a class="active"
                                href="/archives"
                             >
-                                ARCHIVES
+                                归档
                             </a>
                         </li>
                     
@@ -74,7 +74,7 @@
                             <a class=""
                                href="/links"
                             >
-                                LINKS
+                                友链
                             </a>
                         </li>
                     
@@ -82,7 +82,7 @@
                             <a class=""
                                href="/about"
                             >
-                                ABOUT
+                                关于
                             </a>
                         </li>
                     
@@ -109,22 +109,22 @@
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/">HOME</a>
+                       href="/">首页</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class="active"
-                       href="/archives">ARCHIVES</a>
+                       href="/archives">归档</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/links">LINKS</a>
+                       href="/links">友链</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/about">ABOUT</a>
+                       href="/about">关于</a>
                 </li>
             
         </ul>
@@ -150,9 +150,16 @@
         <section class="archive-item">
             <div class="archive-item-header">
                 <span class="archive-year">2021</span>
-                <span class="archive-year-post-count">[1]</span>
+                <span class="archive-year-post-count">[2]</span>
             </div>
             <ul class="article-list">
+                
+                    <li class="article-item">
+                        <a class="article-title"
+                           href="/2021/02/21/%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%98%E8%85%BE%E8%AE%B0/"
+                        >软路由折腾记</a>
+                        <span class="article-date">02-21</span>
+                    </li>
                 
                     <li class="article-item">
                         <a class="article-title"
@@ -203,7 +210,7 @@
         </div>
         
         <div class="theme-info info-item">
-            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.0</a>
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.0</a>
         </div>
         
     </div>
@@ -259,9 +266,43 @@
 
     
 
-    <div class="image-viewer-container">
-    <img src="">
-</div>
+    .image-viewer-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  visibility: hidden;
+  z-index: $z-index-8;
+  padding: 6%;
+  box-sizing: border-box;
+  transition-t("visibility, background", "0, 0", "0.3, 0.3", "ease, ease");
+
+  &.active {
+    background: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+
+    img {
+      cursor: zoom-out;
+      transform: scale(1);
+      padding: 2px;
+      background: var(--background-color);
+    }
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    transform: scale(0);
+    transition-t("transform", "0", "0.3", "ease");
+  }
+}
+
+
 
 
     
@@ -275,7 +316,7 @@
                 <input autocomplete="off"
                        autocorrect="off"
                        autocapitalize="off"
-                       placeholder="Search..."
+                       placeholder="搜索..."
                        spellcheck="false"
                        type="search"
                        class="search-input"
