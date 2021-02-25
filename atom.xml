@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-25T06:00:27.812Z</updated>
+  <updated>2021-02-25T06:08:37.015Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2021/02/25/shell%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2021/02/25/shell%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2021-02-25T05:41:24.000Z</published>
-    <updated>2021-02-25T06:00:27.812Z</updated>
+    <updated>2021-02-25T06:08:37.015Z</updated>
     
-    <content type="html"><![CDATA[<p>在Windows中路径使用反斜杠[],在Linux和macOS中使用[/]正斜杠。</p><p>路径分为绝对路径(abslute path)和相对路径(relative path)。</p><p>显示当前路径 </p><p><code>pwd</code>  意为显示当前路径 meaning “print working directory”.</p><p><code>cd</code> 意为改变当前目录 meaning “change direcotry”.</p><p>使用绝对路径时，cd ./xxx/xxx</p><p>使用相对路径时，cd  /xxx/xxx</p><p><code>cd ~</code>意为前往默认目录(？).</p><p><code>cd -</code>在两个目录之间切换.</p>]]></content>
+    <content type="html"><![CDATA[<p>在Windows中路径使用反斜杠[],在Linux和macOS中使用[/]正斜杠。</p><p>路径分为绝对路径(abslute path)和相对路径(relative path)。</p><p>显示当前路径 </p><p><code>pwd</code>  意为显示当前路径 meaning “print working directory”.</p><p><code>cd</code> 意为改变当前目录 meaning “change direcotry”.</p><p>使用绝对路径时，cd ./xxx/xxx</p><p>使用相对路径时，cd  /xxx/xxx</p><p><code>cd ~</code>意为前往默认目录(？).</p><p><code>cd -</code>在两个目录之间切换.</p><p><code>ls -l</code>显示目录文件的详细权限信息。</p>]]></content>
     
     
       
