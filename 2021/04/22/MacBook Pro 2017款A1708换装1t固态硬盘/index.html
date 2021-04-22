@@ -172,7 +172,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>221 Words</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>526 Words</span>
         </span>
     
     
@@ -185,12 +185,19 @@
         
 
         <div class="article-content markdown-body">
-            <p>在2020年就知道在淘宝上出现了能转接硬盘到A1708的转接版，但是因为没有什么参考，加上256G勉强够用，迟迟没有买，在淘宝搜索“A1708转接版”有单独出售的转接板，也有捆绑ssd售卖的。<br>我个人是倾向于购买转接板自己买ssd的。<br>最终，花了23元购买转接版，而ssd选择了1T容量的西数SN530，大概就是SN550的OEM版本，硬盘参数可以在西数官网找到：<a class="link"   target="_blank" rel="noopener" href="https://www.westerndigital.com/products/commercial-internal-drives/pc-sn530-ssd" >https://www.westerndigital.com/products/commercial-internal-drives/pc-sn530-ssd<i class="fas fa-external-link-alt"></i></a></p>
+            <p>在2020年就知道在淘宝上出现了能转接硬盘到A1708的转接版，但是因为没有什么参考，加上256G勉强够用，迟迟没有买，在淘宝搜索“A1708转接版”有单独出售的转接板，也有捆绑ssd售卖的。<br>我个人是倾向于购买转接板自己买ssd的。</p>
+<p>关于ssd的选择，稍微参考了这个视频：<a class="link"   target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=SbAN-REhb1Y&amp;t=503s&amp;ab_channel=%E6%95%B0%E7%A0%81%E5%90%9B" >https://www.youtube.com/watch?v=SbAN-REhb1Y&amp;t=503s&amp;ab_channel=%E6%95%B0%E7%A0%81%E5%90%9B<i class="fas fa-external-link-alt"></i></a><br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/image.56f0z3a8x840.png" alt="image"></p>
+<p>最终，花了23元购买转接版，而ssd选择了1T容量的西数SN530，大概就是SN550的OEM版本，硬盘参数可以在西数官网找到：<a class="link"   target="_blank" rel="noopener" href="https://www.westerndigital.com/products/commercial-internal-drives/pc-sn530-ssd" >https://www.westerndigital.com/products/commercial-internal-drives/pc-sn530-ssd<i class="fas fa-external-link-alt"></i></a></p>
 <p><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/1.4g4vwuoq4w00.jpg" alt="1"><br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/2.6yajzu67rec0.jpg" alt="2"></p>
 <p>因为之前更换鼓包的电池拆过一次，所以拆开后盖倒是轻车熟路，首先是断开电池连接，由一个扁扁的螺丝固定，拧开螺丝将连接端子挑起，把原装的256G固态拆下，将ssd装到转接卡上之后装入插槽。</p>
-<p><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/IMG_0088.JPG" alt="IMG_0088"></p>
-<p><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/IMG_1034-min.jpeg" alt="IMG_1034-min"></p>
-<p><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/IMG_1034.jpg" alt="IMG_1034"></p>
+<p>拆开后盖的样子。<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/IMG_1033.jpg" alt="IMG_1033"></p>
+<p>电池连接处<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/IMG_1034.us14o4z67yo.jpg" alt="IMG_1034"></p>
+<p>SSD特写<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/IMG_1035.3canr2gp2ke0.JPG" alt="IMG_1035"></p>
+<p>更换下来的原装SSD<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/IMG_1036.iguezlb0fg0.jpg" alt="IMG_1036"></p>
+<p>重点！</p>
+<p>macOS恢复工具如果版本低于Mojave那么磁盘工具就完全没有办法识别nvme的硬盘，必须事先将大于等于10.14的磁盘引导程序写入U盘进行引导。我在这里来来回回尝试了无数次才发觉这个问题，关于引导U盘制作参考：<a class="link"   target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/HT201372" >https://support.apple.com/zh-cn/HT201372<i class="fas fa-external-link-alt"></i></a>  。开机后按住option键选择引导U盘，之后应该就可以在磁盘工具中看到被识别的新硬盘，之后便是按照常规流程安装系统或者从Time Machine中恢复，我花了大概4个多小时从Time Machine的外置机械盘里恢复系统。</p>
+<p>放一张SN530的跑分，写入比苹果原装的要快大概一倍，而读取速度相差不大<img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/image.6bli1gflefw0.png" alt="image"></p>
+<p>在恢复完系统之后有一次开机出现无法找到硬盘的情况，也不知道是不是偶然，希望可以稳定用下去。</p>
 
         </div>
 
