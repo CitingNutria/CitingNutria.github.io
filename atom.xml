@@ -38,27 +38,6 @@
   </entry>
   
   <entry>
-    <title>兰科芯128G固态u盘评测</title>
-    <link href="http://example.com/2021/05/02/%E8%93%9D%E7%A7%91%E8%8A%AF128G%E5%9B%BA%E6%80%81u%E7%9B%98%E8%AF%84%E6%B5%8B/"/>
-    <id>http://example.com/2021/05/02/%E8%93%9D%E7%A7%91%E8%8A%AF128G%E5%9B%BA%E6%80%81u%E7%9B%98%E8%AF%84%E6%B5%8B/</id>
-    <published>2021-05-02T03:16:12.000Z</published>
-    <updated>2021-05-02T13:19:49.928Z</updated>
-    
-    <content type="html"><![CDATA[<p>之前因为一些原因把Nvme的固态硬盘盒给卖掉了，卖掉之后发觉很缺少一个高速的移动存储设备，虽然也可以拿着5t的移动硬盘但是终归还是不方便，而手头上32G的u盘速度实在令人蛋疼。</p><p>很久以前就听闻用有人用ssd方案做u盘来装win-to-go（将Windows操作系统装入u盘随身携带），去某宝看到某论坛合作商家，然而被价格劝退。</p><p>翻了两天看这个兰科芯的固态u盘还行，宣称主控是慧荣的SMI2246XT,颗粒MLC颗粒，但是没写具体型号，是不是黑片也就不知道了。最后还是下单了，价格不便宜，128G的179到手。<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/20210422/lkx-price.67ce0xfjczs0.jpg" alt="lkx-price"></p><p>上海发货，经过两天的等待到手，送了一个没什么用的小保护套，以及一个A to C和一个A to MicroB的转接头。<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/20210422/lkx-all.2znk4nyzby20.JPG" alt="lkx-all"></p><p>反面印着2D MLC的宣传。<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/20210422/lkx-back.rlm6m7n781s.JPG" alt="lkx-back"><br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/20210422/lkx-body.6yzrfubgx3g0.JPG" alt="lkx-body"></p><p>下面直接放测试结果。</p><p>CrystalDiskMark检测结果，确实是检测为SSD了，支持SMART.<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/20210422/lkx-cry-disk-info.4peaa4bsqsk0.PNG" alt="lkx-cry-disk-info"></p><p>AS SSD Benchmark测试结果。<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/20210422/lkx-assd-test-result2.6sjdxrzmccw0.PNG" alt="lkx-assd-test-result2"></p><p>这个结果虽然在SSD里实在算不上优秀，但是考虑到体积和便携性，应该还是相当不错。</p><p>最后放一张之前普通u盘的测试，4k实在太慢了估计跑完要几个小时，就没有全部完成。<br><img src="https://raw.githubusercontent.com/CitingNutria/image_hosting/master/20210422/old-usb-drive-asssd.3i3eiwe76920.PNG" alt="old-usb-drive-asssd"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;之前因为一些原因把Nvme的固态硬盘盒给卖掉了，卖掉之后发觉很缺少一个高速的移动存储设备，虽然也可以拿着5t的移动硬盘但是终归还是不方便，而手头上32G的u盘速度实在令人蛋疼。&lt;/p&gt;
-&lt;p&gt;很久以前就听闻用有人用ssd方案做u盘来装win-to-go（将Windows操作</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>MacBook Pro 2017款A1708换装1t固态硬盘</title>
     <link href="http://example.com/2021/04/22/MacBook%20Pro%202017%E6%AC%BEA1708%E6%8D%A2%E8%A3%851t%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98/"/>
     <id>http://example.com/2021/04/22/MacBook%20Pro%202017%E6%AC%BEA1708%E6%8D%A2%E8%A3%851t%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98/</id>
