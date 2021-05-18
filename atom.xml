@@ -62,7 +62,7 @@
     <link href="http://example.com/2021/02/25/shell%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://example.com/2021/02/25/shell%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
     <published>2021-02-25T05:41:24.000Z</published>
-    <updated>2021-02-25T06:08:37.015Z</updated>
+    <updated>2021-02-25T06:08:37.000Z</updated>
     
     <content type="html"><![CDATA[<p>在Windows中路径使用反斜杠[],在Linux和macOS中使用[/]正斜杠。</p><p>路径分为绝对路径(abslute path)和相对路径(relative path)。</p><p>显示当前路径 </p><p><code>pwd</code>  意为显示当前路径 meaning “print working directory”.</p><p><code>cd</code> 意为改变当前目录 meaning “change direcotry”.</p><p>使用绝对路径时，cd ./xxx/xxx</p><p>使用相对路径时，cd  /xxx/xxx</p><p><code>cd ~</code>意为前往默认目录(？).</p><p><code>cd -</code>在两个目录之间切换.</p><p><code>ls -l</code>显示目录文件的详细权限信息。</p>]]></content>
     
@@ -85,7 +85,7 @@
     <link href="http://example.com/2021/02/21/%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%98%E8%85%BE%E8%AE%B0/"/>
     <id>http://example.com/2021/02/21/%E8%BD%AF%E8%B7%AF%E7%94%B1%E6%8A%98%E8%85%BE%E8%AE%B0/</id>
     <published>2021-02-20T22:55:18.000Z</published>
-    <updated>2021-02-20T23:44:48.223Z</updated>
+    <updated>2021-02-20T23:44:48.000Z</updated>
     
     <content type="html"><![CDATA[<p>从前总是听说过软路由，但是也一直没有去详细了解这么个东西，去年秋季开学机缘巧合下通过一个新同学认识了软路由这么个东西。</p><p>软路由的功能不少，但是对我来说最重要的莫过于全局魔法上网了，在此之前我所有的设备都是通过客户端上网的。客户端翻墙有这么几个弊端。</p><ol><li>有部分设备没发装翻墙客户端或者非常之麻烦，比如电视盒子。</li><li>客户端的代理层级不够高，导致不支持sock5的应用没法利用梯子，比如npm安装包的时候，找国内的镜像源又是一件麻烦事，又或者大部分游戏，玩Minecraft连接不上Mojang的验证服务器也是常有的事。</li><li>节约客户端用于解码加密数据的算力，虽然个人并没有明显的感受到这一点的影响，但是对于一些算力比较弱的设备可能比较重要。</li></ol><p>在学校里因为要对校园网进行桥接来让我所有的设备能够联网，而不是每个设备每次都要单独登录，更何况还有设备数量限制。一开始是闲鱼买的一台伊拉克成色的小米路由器mini，只要30块钱，让大佬同学帮我刷了老毛子固件，用了一阵子，至少在本职工作——桥接校园网这件事上做的还是不错的。</p><h1 id="咕"><a href="#咕" class="headerlink" title="咕"></a>咕</h1>]]></content>
     
@@ -107,9 +107,9 @@
     <link href="http://example.com/2021/02/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8A%98%E8%85%BEBlog/"/>
     <id>http://example.com/2021/02/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8A%98%E8%85%BEBlog/</id>
     <published>2021-02-19T22:00:00.000Z</published>
-    <updated>2021-05-18T09:53:30.684Z</updated>
+    <updated>2021-05-18T09:59:43.742Z</updated>
     
-    <content type="html"><![CDATA[<p> 其实这是第三次折腾Blog了，这次使用的是Github page + Hexo的组合，只要求能跑起来就好(捂脸)。</p><p>这里记录一下安装的步骤好了，主要目的是防止自己之后又忘记，环境是MacOS Catalina 10.15.7。</p><h2 id="环境检查"><a href="#环境检查" class="headerlink" title="环境检查"></a>环境检查</h2><p>首先检查一下需要的Node和Git,如果正常显示版本就没有问题啦。</p><p><code>git version</code></p><p><code>node -v</code></p><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>执行如下命令安装hexo。然后要输入一下密码，似乎MacOS上所有npm命令都需要sudo。</p><p>ps:我是在路由器可以全局访问国际互联网的环境下，如果访问困难可能需要使用大陆境内的镜像。</p><p><code>sudo npm install -g hexo-cli</code></p><p>在想要存放博客内容的地方创建一个hexo的根目录，这里取名myBlog,实际想怎么取都行。</p><p><code>hexo init myBlog</code></p><p>cd指令进入刚刚创建的myBlog文件夹，之后几乎所有的操作都要在这个目录下进行，在其他目录可能会出问题。</p><p><code>cd myBlog</code></p><p>安装Hexo相关组建</p><p><code>npm install</code></p><h2 id="尝试在本地运行"><a href="#尝试在本地运行" class="headerlink" title="尝试在本地运行"></a>尝试在本地运行</h2><p>执行<br><code>hexo s</code></p><p>如果没有问题现在应该可以通过浏览器 <a class="link"   href="http://localhost:4000/" >http://localhost:4000/<i class="fas fa-external-link-alt"></i></a> 访问初始demo页面了。</p><p>一些常用的指令</p><p>创建新的文章<br><code>$ hexo new [layout] &lt;title&gt;</code></p><p>完成部署<br><code>$ hexo d -g</code></p><!-- `````` --><p>WIP</p>]]></content>
+    <content type="html"><![CDATA[<p> 其实这是第三次折腾Blog了，这次使用的是Github page + Hexo的组合，只要求能跑起来就好(捂脸)。</p><p>这里记录一下安装的步骤好了，主要目的是防止自己之后又忘记，环境是MacOS Catalina 10.15.7。</p><h2 id="环境检查"><a href="#环境检查" class="headerlink" title="环境检查"></a>环境检查</h2><p>首先检查一下需要的Node和Git,如果正常显示版本就没有问题啦。</p><p><code>git version</code></p><p><code>node -v</code></p><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>执行如下命令安装hexo。然后要输入一下密码，似乎MacOS上所有npm命令都需要sudo。</p><p>ps:我是在路由器可以全局访问国际互联网的环境下，如果访问困难可能需要使用大陆境内的镜像。</p><p><code>sudo npm install -g hexo-cli</code></p><p>在想要存放博客内容的地方创建一个hexo的根目录，这里取名myBlog,实际想怎么取都行。</p><p><code>hexo init myBlog</code></p><p>cd指令进入刚刚创建的myBlog文件夹，之后几乎所有的操作都要在这个目录下进行，在其他目录可能会出问题。</p><p><code>cd myBlog</code></p><p>安装Hexo相关组建</p><p><code>npm install</code></p><h2 id="尝试在本地运行"><a href="#尝试在本地运行" class="headerlink" title="尝试在本地运行"></a>尝试在本地运行</h2><p>执行<br><code>hexo s</code></p><p>如果没有问题现在应该可以通过浏览器 <a class="link"   href="http://localhost:4000/" >http://localhost:4000/<i class="fas fa-external-link-alt"></i></a> 访问初始demo页面了。</p><p>一些常用的指令</p><p>创建新的文章<br><code>$ hexo new [layout] &lt;title&gt;</code></p><p>完成部署<br><code>$ hexo d -g</code></p><p>清除缓存<br><code>$ hexo clean</code><br><code> </code></p><p>WIP</p>]]></content>
     
     
       
@@ -129,7 +129,7 @@
     <link href="http://example.com/2020/07/20/%E5%85%89%E7%9B%98%E5%A4%87%E4%BB%BD%E8%AE%A1%E5%88%92/"/>
     <id>http://example.com/2020/07/20/%E5%85%89%E7%9B%98%E5%A4%87%E4%BB%BD%E8%AE%A1%E5%88%92/</id>
     <published>2020-07-20T02:34:51.000Z</published>
-    <updated>2021-02-20T02:38:47.231Z</updated>
+    <updated>2021-02-20T02:38:47.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在数月之前，SSD发生了一次毁灭性的故障，导致了许多曾在Minecraft服务器（毛线）里的截图丢失，这些截图的丢人令我感到非常难受，毕竟算是曾经几乎一整年的回忆（当时什么都没有干完全沉迷毛线）。仔细回想这也不是第一次因为电脑或者手机丢失/故障而失去一些重要数据了，于是打算折腾一个数据冷备份的计划。<br>Google了一下主流存储介质的寿命，看起来光盘的寿命似乎有10年左右，不过网上也很多人说自己在家用刻录机刻录的光盘的寿命要比批量压制的光盘短很多，不过个人当然不可能去压制光盘，当年父母结婚时候的刻录盘似乎现在也可以读取，感觉光盘的可靠性似乎不错。<br>如果打算光盘备份的话，预算充足蓝光盘无疑是最好的选择，每片25G的廉价蓝光盘大概2元左右，但是蓝光刻录机的价格成功阻止了我，几乎全都在500+。考虑到现在需要备份的资料不是特别多，准备用单盘4.7G的DVD盘备份，因为还在上学，对便携性有一点点要求，于是咸鱼收了一台苹果的SuperDrive，事实上如果不要求便携性，一台二手的DVD刻录光驱+SATA转USB线，大概只要40r不到就能拿下。</p><h2 id="咕"><a href="#咕" class="headerlink" title="咕"></a>咕</h2>]]></content>
     
