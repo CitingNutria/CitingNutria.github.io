@@ -27,80 +27,12 @@
 
 
 <body>
-.progress-bar-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: $z-index-9;
+<div class="progress-bar-container">
+    
 
-  if (hexo-config('pjax.enable') == true) {
+    
+</div>
 
-    .pjax-progress-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 2px;
-      width: 0;
-      background: var(--pjax-progress-bar-color);
-      visibility: hidden;
-      opacity: 0;
-      z-index: $z-index-8;
-      transition-t("width", "0", "0.1", "linear");
-
-
-      &.show {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-
-
-    .pjax-progress-icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: $z-index-8;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 7px 6px 0 0;
-      visibility: hidden;
-      font-size: 1.1rem;
-      color: var(--default-text-color);
-
-      +keep-tablet() {
-        padding: 6px 5px 0 0;
-        font-size: 1rem;
-      }
-
-      &.show {
-        visibility: visible;
-      }
-    }
-
-  }
-
-  if (hexo-config('style.scroll.progress_bar.enable') == true) {
-
-    .scroll-progress-bar {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 0;
-      height: $scroll-progress-bar-height;
-      visibility: hidden;
-      z-index: $z-index-7;
-      background: var(--primary-color);
-      transition-t("width", "0", "0.1", "linear");
-
-      &.hide {
-        display: none !important;
-      }
-    }
-
-  }
-}
 
 <main class="page-container">
 
@@ -126,7 +58,7 @@
                             <a class=""
                                href="/"
                             >
-                                首页
+                                HOME
                             </a>
                         </li>
                     
@@ -134,7 +66,7 @@
                             <a class=""
                                href="/archives"
                             >
-                                归档
+                                ARCHIVES
                             </a>
                         </li>
                     
@@ -142,7 +74,7 @@
                             <a class=""
                                href="/links"
                             >
-                                友链
+                                LINKS
                             </a>
                         </li>
                     
@@ -150,7 +82,7 @@
                             <a class=""
                                href="/about"
                             >
-                                关于
+                                ABOUT
                             </a>
                         </li>
                     
@@ -177,22 +109,22 @@
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/">首页</a>
+                       href="/">HOME</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/archives">归档</a>
+                       href="/archives">ARCHIVES</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/links">友链</a>
+                       href="/links">LINKS</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/about">关于</a>
+                       href="/about">ABOUT</a>
                 </li>
             
         </ul>
@@ -240,7 +172,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>373 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>482 Words</span>
         </span>
     
     
@@ -257,17 +189,21 @@
 <p>py2app可以将py脚本文件转换为macOS可以直接运行的应用程序，下面是简单的步骤。</p>
 <h3 id="安装py2app"><a href="#安装py2app" class="headerlink" title="安装py2app"></a>安装py2app</h3><p>在终端中输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install -U py2app</span><br></pre></td></tr></table></figure>
-<h3 id="生成setup-py配置文件"><a href="#生成setup-py配置文件" class="headerlink" title="生成setup.py配置文件"></a>生成setup.py配置文件</h3><p>假设我们有了一个py文件，文件名是main.py。</p>
-<p>首先需要生成一个setup.py文件。在终端中输入下面的指令，其中的main.py需要根据自己要生成的.py文件的不同去修改。</p>
+<h3 id="生成setup-py配置文件"><a href="#生成setup-py配置文件" class="headerlink" title="生成setup.py配置文件"></a>生成setup.py配置文件</h3><p>假设我们有了一个py文件，文件名是<code>main.py</code>。</p>
+<p>首先需要生成一个<code>setup.py</code>文件。在终端中输入下面的指令，其中的<code>main.py</code>需要根据自己要生成的.py文件的不同去修改。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py2applet --make-setup main.py</span><br></pre></td></tr></table></figure>
 
 
+<h3 id="添加需要用到的外部文件"><a href="#添加需要用到的外部文件" class="headerlink" title="添加需要用到的外部文件"></a>添加需要用到的外部文件</h3><p>如果py文件里需要用到外部文件，那么需要在<code>setup.py</code>里面添加这些文件的路径。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> setuptools <span class="keyword">import</span> setup</span><br><span class="line"></span><br><span class="line">APP = [<span class="string">&#x27;main.py&#x27;</span>]</span><br><span class="line"><span class="comment"># 添加文件路径</span></span><br><span class="line">DATA_FILES = [<span class="string">&#x27;a.txt&#x27;</span>,<span class="string">&#x27;b.jpg&#x27;</span>]</span><br><span class="line">OPTIONS = &#123;&#125;</span><br><span class="line"></span><br><span class="line">setup(</span><br><span class="line">    app=APP,</span><br><span class="line">    data_files=DATA_FILES,</span><br><span class="line">    options=&#123;<span class="string">&#x27;py2app&#x27;</span>: OPTIONS&#125;,</span><br><span class="line">    setup_requires=[<span class="string">&#x27;py2app&#x27;</span>],</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+
 <h3 id="更改图标（可选）"><a href="#更改图标（可选）" class="headerlink" title="更改图标（可选）"></a>更改图标（可选）</h3><p>默认生成的应用程序的图标是一样的，如果想要更换图标，需要先准备好一个图标的图片，py2app接受icns格式的图标文件，icns是苹果图标文件格式，可以在<a class="link"   target="_blank" rel="noopener" href="https://cloudconvert.com/" >https://cloudconvert.com/<i class="fas fa-external-link-alt"></i></a> 将其他格式的图片转换成icns格式。</p>
-<p>这里的图标文件是’icon.icns’将转换完成的图标文件放入和py文件同一个目录下，打开setup.py编辑，在OPTIONS里如下编辑。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> setuptools <span class="keyword">import</span> setup</span><br><span class="line"></span><br><span class="line">APP = [<span class="string">&#x27;main.py&#x27;</span>]</span><br><span class="line">DATA_FILES = []</span><br><span class="line">OPTIONS = &#123;<span class="string">&#x27;iconfile&#x27;</span>:<span class="string">&#x27;icon.icns&#x27;</span>,&#125;</span><br><span class="line"></span><br><span class="line">setup(</span><br><span class="line">    app=APP,</span><br><span class="line">    data_files=DATA_FILES,</span><br><span class="line">    options=&#123;<span class="string">&#x27;py2app&#x27;</span>: OPTIONS&#125;,</span><br><span class="line">    setup_requires=[<span class="string">&#x27;py2app&#x27;</span>],</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>这里的图标文件是<code>icon.icns</code>将转换完成的图标文件放入和py文件同一个目录下，打开<code>setup.py</code>编辑，在OPTIONS里如下编辑。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> setuptools <span class="keyword">import</span> setup</span><br><span class="line"></span><br><span class="line">APP = [<span class="string">&#x27;main.py&#x27;</span>]</span><br><span class="line"><span class="comment"># 添加文件路径</span></span><br><span class="line">DATA_FILES = [<span class="string">&#x27;a.txt&#x27;</span>,<span class="string">&#x27;b.jpg&#x27;</span>]</span><br><span class="line"><span class="comment"># 添加需要修改的图标文件</span></span><br><span class="line">OPTIONS = &#123;<span class="string">&#x27;iconfile&#x27;</span>:<span class="string">&#x27;icon.icns&#x27;</span>,&#125;</span><br><span class="line"></span><br><span class="line">setup(</span><br><span class="line">    app=APP,</span><br><span class="line">    data_files=DATA_FILES,</span><br><span class="line">    options=&#123;<span class="string">&#x27;py2app&#x27;</span>: OPTIONS&#125;,</span><br><span class="line">    setup_requires=[<span class="string">&#x27;py2app&#x27;</span>],</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <h3 id="生成应用程序文件"><a href="#生成应用程序文件" class="headerlink" title="生成应用程序文件"></a>生成应用程序文件</h3><p>然后再输入</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 setup.py py2app -A</span><br></pre></td></tr></table></figure>
-<p>这里的-A一定是大写，不可以是小写的-a。</p>
+<p>这里的<code>-A</code>一定是大写，不可以是小写的<code>-a</code>。</p>
 <p>此时目录里应该会多出两个文件夹，一个build文件夹，一个dist文件夹，而我们需要的应用程序就在dist文件夹里面。</p>
 
         </div>
@@ -285,7 +221,7 @@
                         >
                             <span class="title flex-center">
                                 <span class="post-nav-title-item">用Python写一个健康打卡脚本</span>
-                                <span class="post-nav-item">下一篇</span>
+                                <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center">
                               <i class="fas fa-chevron-right"></i>
@@ -301,7 +237,7 @@
                 <div class="comments-container">
     <div id="comment-anchor"></div>
     <div class="comment-area-title">
-        <i class="fas fa-comments">&nbsp;评论</i>
+        <i class="fas fa-comments">&nbsp;Comments</i>
     </div>
     
 
@@ -375,7 +311,7 @@
         </div>
         
         <div class="theme-info info-item">
-            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.0</a>
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.0</a>
         </div>
         
     </div>
@@ -454,7 +390,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85py2app"><span class="nav-number">1.</span> <span class="nav-text">安装py2app</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90setup-py%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">生成setup.py配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">更改图标（可选）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">生成应用程序文件</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85py2app"><span class="nav-number">1.</span> <span class="nav-text">安装py2app</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90setup-py%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">生成setup.py配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E9%9C%80%E8%A6%81%E7%94%A8%E5%88%B0%E7%9A%84%E5%A4%96%E9%83%A8%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">添加需要用到的外部文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E5%9B%BE%E6%A0%87%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">更改图标（可选）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6"><span class="nav-number">5.</span> <span class="nav-text">生成应用程序文件</span></a></li></ol>
     </div>
 </div>
         </aside>
@@ -466,182 +402,33 @@
 
 
     
-        $icon-size = 1.2rem;
-
-.search-pop-overlay {
-  position: fixed;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0);
-  visibility: hidden;
-  z-index: $z-index-8;
-  transition-t("visibility, background", "0, 0", "0.3, 0.3", "ease, ease");
-
-  &.active {
-    visibility: visible;
-    background: rgba(0, 0, 0, 0.35);
-
-    .search-popup {
-      transform: scale(1);
-    }
-
-  }
-
-
-  .search-popup {
-    background: var(--background-color);
-    border-radius: 5px;
-    height: 80%;
-    width: 70%;
-    margin: auto;
-    transform: scale(0);
-    z-index: $z-index-6;
-    transition-t("transform", "0", "0.3", "ease");
-
-    +keep-tablet() {
-      width: 80%;
-    }
-
-    +keep-mobile() {
-      width: 90%;
-    }
-
-    .search-header {
-      background: var(--fourth-text-color);
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
-      display: flex;
-      padding: 10px;
-
-      .search-input-field-pre, .popup-btn-close {
-        font-size: $icon-size;
-        padding: 0 10px;
-        display: flex;
-        align-items: center;
-      }
-
-      .search-input-field-pre {
-        cursor: pointer;
-        color: var(--third-text-color);
-      }
-
-      .popup-btn-close {
-        color: var(--default-text-color);
-      }
-
-
-      .search-input-container {
-
-        flex-grow: 1;
-        padding: 2px;
-
-        .search-input {
-          background: transparent;
-          border: 0;
-          outline: 0;
-          width: 100%;
-          font-size: 1.2rem;
-          color: var(--default-text-color);
-
-          &::-webkit-search-cancel-button {
-            display: none;
-          }
-        }
-
-
-      }
-
-
-      .popup-btn-close {
-        cursor: pointer;
-
-        &:hover .fas, far, fab {
-          color: var(--first-text-color);
-        }
-      }
-
-    }
-
-
-    #search-result {
-      display: flex;
-      height: calc(100% - 55px);
-      overflow: auto;
-      padding: 5px 25px;
-
-      .search-result-list {
-        width: 100%;
-        height: 100%;
-        font-size: 1rem;
-
-        li {
-          border-bottom: 1px dashed var(--border-color);
-          padding: 10px 0;
-          margin: 10px 0;
-          box-sizing: border-box;
-
-          &:last-child {
-            border-bottom: none;
-          }
-
-
-          .search-result-title {
-            position: relative;
-            font-weight: bold;
-            margin-bottom: 10px;
-            padding-left: 16px;
-            display: flex;
-            align-items: center;
-
-            &::after {
-              content: '';
-              position: absolute;
-              width: 5px;
-              height: 5px;
-              border-radius: 50%;
-              top: 50%;
-              transform: translateY(-50%);
-              left: 0;
-              background: var(--default-text-color);
-            }
-          }
-
-
-          .search-result {
-            line-height: 2rem;
-            margin: 0;
-            padding-left: 16px;
-            word-wrap: break-word;
-          }
-
-          a {
-            &:hover {
-              color: var(--default-text-color);
-            }
-          }
-
-          .search-keyword {
-            border-bottom: 1px dashed var(--primary-color);
-            color: var(--primary-color);
-            font-weight: bold;
-          }
-
-        }
-      }
-
-
-      #no-result {
-        color: var(--third-text-color);
-        margin: auto;
-      }
-
-    }
-  }
-}
-
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
     
 
