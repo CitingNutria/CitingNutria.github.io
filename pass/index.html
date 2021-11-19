@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <!-- æµè§å¨å¾æ  -->
+    <!-- æµè§å¨å¾æ  -->
     <link rel="shortcut icon" href="https://wk.njucm.edu.cn/default/favicon.ico" type="image/x-icon">
     <!-- Bootstrap 3.3.5 -->
     <link rel="stylesheet" href="https://wk.njucm.edu.cn/default/base/_libs/bootstrap/css/bootstrap.min.css">
@@ -54,7 +54,7 @@
         href="https://wk.njucm.edu.cn/default/base/_libs/coreplus/mspplus_form.css">
     <link rel="stylesheet" class="old-template-css"
         href="https://wk.njucm.edu.cn/default/base/_libs/coreplus/coreplus-form.css">
-    <!-- ææºç«¯ éææ ·å¼è¡¨ -->
+    <!-- ææºç«¯ éææ ·å¼è¡¨ -->
     <!--<link rel="stylesheet"-->
     <!--href="/default/base/_libs/coreplus/coreplus-form-mobile.css">-->
     <link rel="stylesheet" href="https://wk.njucm.edu.cn/default/base/_libs/plugins/wangEditor/css/wangEditor.min.css">
@@ -201,7 +201,7 @@
                         <div name="lsh" style="font-size:14px;color:#FF0000;font-weight:normal;display:inline-block;"
                             initvaluetype="custom" data-uid="104" mspplus-field="true" prefix="处理号>>"
                             class="sui-text  sui-component  form-readOnly" mode="readOnly" sui="true">
-                            <div class="value-text"><span class="">处理号&gt;&gt;YQQJBKSLSCRXYSQ202109240419</span></div>
+                            <div class="value-text"><span class="">处理号&gt;&gt;YABIODHAOSCRXYSQ202110100419</span></div>
                         </div>
                     </div>
                     <div data-uid="191" class=" ">
@@ -361,7 +361,7 @@
                                             class="sui-input  sui-component form-readOnly" sui="true"><input
                                                 name="sshao" type="text" id="input_sshao" class="form-control " value=""
                                                 readonly="readonly" style="display: none;">
-                                            <div class="value-text"><span class="value" id="value_sshao">c391221</span>
+                                            <div class="value-text"><span class="value" id="value_sshao">c000000</span>
                                             </div>
                                         </div>
                                     </div>
@@ -389,7 +389,7 @@
                                             ismultvalue="false" isdefaultfirst="false" keepstyleonphone="false"
                                             data-uid="230" mspplus-field="true"
                                             class="sui-select  form-select sui-component form-readOnly" sui="true">
-                                            <div class="value-text"> <span class="value" id="value_sfgatqxs">是</span>
+                                            <div class="value-text"> <span class="value" id="value_sfgatqxs">否</span>
                                             </div><select name="sfgatqxs" id="select_sfgatqxs" class="form-control"
                                                 disabled="disabled" style="display: none;">
                                                 <option value="$noValue$" selected="">请选择</option>
@@ -614,7 +614,7 @@
                                                 name="jjlxrdh" type="text" id="input_jjlxrdh" class="form-control "
                                                 value="" readonly="readonly" style="display: none;">
                                             <div class="value-text"><span class="value"
-                                                    id="value_jjlxrdh">17662810272</span></div>
+                                                    id="value_jjlxrdh">18562610281</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -812,8 +812,8 @@
                                             sui="true">
                                             <div class="value-text"><span> 同意请假申请，学生回校后进入销假环节</span><br>
                                                 <div style="text-align: right;">——<img class="personal-signature"
-                                                        src="https://wk.njucm.edu.cn/default/base/workflow/do.jsp?workItemID=613632&amp;f=wechat&amp;appload=0&amp;layerId=1&amp;id=163858&amp;ticket=ST-122470-HiR5fbCuJsEINe5dYfYU-62f1e6016fd6">王健
-                                                    2021-10-02 08:13</div>
+                                                        src="https://wk.njucm.edu.cn/default/base/workflow/do.jsp?workItemID=613632&amp;f=wechat&amp;appload=0&amp;layerId=1&amp;id=163858&amp;ticket=ST-122470-HiR5fbCuJsEINe5dYfYU-62f1e6016fd6"><span id="fudaoyuan">王健</span>
+                                                    2021-10-8 08:13</div>
                                             </div><textarea class="form-control" rows="3" readonly="readonly"
                                                 style="border: none; display: none;"></textarea>
                                         </div>
@@ -927,7 +927,7 @@
                                                                 style="width: 100%; display: none;">
                                                                 <option id="sui-participates-3" value="81" op_type="emp"
                                                                     op_name="王健" selected="selected">王健：</option>
-                                                            </select><span class="partici-readonly">王健：</span></div>
+                                                            </select><span class="partici-readonly" id="fudaoyuan2">王健：</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1033,16 +1033,22 @@
         var myDate = new Date();
         myDate.toLocaleDateString();     //获取当前日期
         myData = dateFormat("YYYY-mm-dd", myDate);
-        alert("填完信息会生成网页,滑动给门卫看就行,反正临时出入申请也不能刷码,日期自动更新,最好别用默认信息。");
-        var name = prompt("请输入您的名字", "王刚"); // 弹出input框
-        var stuid = prompt("请输入您的学号", "20201823");
-        var reason = prompt("请输入外出理由", "去医院");
-        var address = prompt("请输入外出地点", "新街口");
-        var college = prompt("请输入学院", "人工智能及信息学院");
-        var class2 = prompt("请输入班级", "计算机202");
+        alert("不要在QQ里直接打开！！！\n没有填写信息的弹窗就说明浏览器有问题。\n填完信息会生成网页,滑动给门卫看就行,反正临时出入申请也不能刷码,日期自动更新,最好别用默认信息。");
+        var name = prompt("请输入您的名字", "狗蛋"); // 弹出input框
+        var stuid = prompt("请输入您的学号", "23333");
+        var reason = prompt("请输入外出理由", "逛街");
+        var address = prompt("请输入外出地点", "长安街");
+        var college = prompt("请输入学院", "佛学院");
+        var class2 = prompt("请输入班级", "核工程195");
+        var dormitory_station = prompt("请输入宿管站", "仙林0号站");
+        var dormitory_number = prompt("请输入宿舍号", "C00-0000");
+
+
+
         // var data = prompt("请输入日期", "2021-10-09");
-        // var stuid = prompt("请输辅导员", "");
+        var fdy = prompt("请输辅导员", "");
         // alert(name);
+        // document.getElementById('value_jjlxrxm').innerHTML="RUNOOB";
 
         var d_name = document.getElementById('value_sqrxm');
         d_name.innerHTML = name;
@@ -1060,6 +1066,39 @@
         d_college.innerHTML = college;
         var d_class2 = document.getElementById('value_banji');
         d_class2.innerHTML = class2;
+        var d_dormitory = document.getElementById('value_sgz');
+        d_dormitory.innerHTML = dormitory_station;
+
+        var d_dormitory_number = document.getElementById('value_sshao');
+        d_dormitory_number.innerHTML = dormitory_number;
+
+        var d_fdy = document.getElementById('fudaoyuan');
+        var full_fdy = fdy + myData + " 07:13";
+        d_fdy.innerHTML = fdy;
+        var d_fdy2 = document.getElementById('fudaoyuan2');
+        d_fdy2.innerHTML = fdy;
+
+
+        var tel_nub1 = String(189+String(Math.ceil(Math.random()*100000000)));
+        var tel_stu = document.getElementById('value_lxdh');
+        d_tel_stu.innerHTML = tel_nub1;
+
+
+        var tel_nub2 = String(189+String(Math.ceil(Math.random()*100000000)));
+        var tel_par = document.getElementById('value_jjlxrdh');
+        d_tel_par.innerHTML = tel_nub2;
+
+
+
+        // var tel_nub = 189+String(Math.ceil(Math.random()*100000000));
+
+
+
+        var parents=["李永","王楠","田成","王轩","任健","邓仓","马顺","袁峰","李兰若","唐雅美","郭隽雅","叶宜春","邓弘文","白宜年","姚文德","杨天赋","苏茂才","孟博实","邓元良","魏坚白","杜炎彬"];
+        var d_parents = document.getElementById('value_jjlxrxm');
+        var rand1 = Math.ceil(Math.random()*10) + Math.ceil(Math.random()*10);
+        d_parents.innerHTML = parents[rand1];
+        
 
         // value_wcsy
         // value_qjqx_ks1 开始时间
@@ -1067,6 +1106,15 @@
         // value_xxdz 地址
         // value_xymc 学院
         // value_banji 班级
+        // value_sgz 宿管站
+        // value_sshao 房间号
+        // value_jjlxrxm 监护人
+        // value_jjlxrxm
+        // value_lxdh stu tel
+        // value_jjlxrdh partent tel
+
+
+
     </script>
 
 </body>
