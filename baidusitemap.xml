@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2022/02/07/%E6%8E%A2%E7%A9%B6%E7%94%B5%E6%9A%96%E5%99%A8%EF%BC%8C%E7%87%83%E6%B0%94%E5%92%8C%E7%A9%BA%E8%B0%83%E7%9A%84%E5%8F%96%E6%9A%96%E6%95%88%E7%8E%87/</loc>
+    <lastmod>2022-02-07</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2021/02/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8A%98%E8%85%BEBlog/</loc>
+    <lastmod>2022-02-07</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2022/01/30/%E7%94%A8Python%E6%9D%A5%E7%8E%A9Wordle/</loc>
     <lastmod>2022-01-30</lastmod>
   </url>
@@ -19,10 +27,6 @@
   <url>
     <loc>http://example.com/2021/09/10/%E7%94%A8Python%E5%86%99%E4%B8%80%E4%B8%AA%E5%81%A5%E5%BA%B7%E6%89%93%E5%8D%A1%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2021-09-10</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2021/02/20/%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%8A%98%E8%85%BEBlog/</loc>
-    <lastmod>2021-05-18</lastmod>
   </url>
   <url>
     <loc>http://example.com/2021/05/02/%E5%85%B0%E7%A7%91%E8%8A%AF128G%E5%9B%BA%E6%80%81u%E7%9B%98%E8%AF%84%E6%B5%8B/</loc>
